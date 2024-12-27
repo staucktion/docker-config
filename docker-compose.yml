@@ -1,0 +1,43 @@
+services:
+
+  postgresql:
+    build: ../postgresql
+    image: staucktion-postgresql-image
+    container_name: staucktion-postgresql-container
+    volumes:
+      - ../postgresql/volume:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    env_file:
+      - ../postgresql/.env
+    restart: unless-stopped
+
+  pg-admin:
+    build: ../pg-admin
+    image: staucktion-pg-admin-image
+    container_name: staucktion-pg-admin-container
+    volumes:
+      - ../pg-admin/volume:/var/lib/pgadmin
+      - ../postgresql/backup:/var/lib/pgadmin/storage
+    env_file:
+      - ../pg-admin/.env
+    ports:
+      - 3330:80
+    restart: unless-stopped
+  
+  database-initializer:
+    build: ../database-initializer
+    image: staucktion-database-initializer-image
+    container_name: staucktion-database-initializer-container
+    env_file:
+      - ../database-initializer/.env
+
+  bank-api:
+    build: ../bank-api
+    image: staucktion-bank-api-image
+    container_name: staucktion-bank-api-container
+    env_file:
+      - ../bank-api/.env
+    ports:
+      - 8081:80
+    restart: unless-stopped
