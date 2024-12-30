@@ -41,3 +41,15 @@ services:
     ports:
       - 8081:80
     restart: unless-stopped
+
+  ############################################################################# test
+
+  test-bank-api:
+    build: ../test-bank-api
+    image: staucktion-test-bank-api-image
+    container_name: staucktion-test-bank-api-container
+    env_file:
+      - ../test-bank-api/.env
+    volumes:
+      - ../test-bank-api/mochawesome-report:/app/mochawesome-report
+    # restart: unless-stopped
