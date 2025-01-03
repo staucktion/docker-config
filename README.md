@@ -25,6 +25,12 @@ docker compose -p staucktion up --build -d bank-api
 docker stop staucktion-bank-api-container
 docker rm staucktion-bank-api-container
 
+docker compose -p staucktion build bank-ui
+docker compose -p staucktion up -d bank-ui
+docker compose -p staucktion up --build -d bank-ui
+docker stop staucktion-bank-ui-container
+docker rm staucktion-bank-ui-container
+
 docker compose -p staucktion build test-bank-api
 docker compose -p staucktion up -d test-bank-api
 docker compose -p staucktion up --build -d test-bank-api

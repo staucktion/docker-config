@@ -42,6 +42,16 @@ services:
       - 8081:80
     restart: unless-stopped
 
+  bank-ui:
+    build: ../bank-ui
+    image: staucktion-bank-ui-image
+    container_name: staucktion-bank-ui-container
+    env_file:
+      - ../bank-ui/.env
+    ports:
+      - 8082:80
+    restart: unless-stopped
+
   ############################################################################# test
 
   test-bank-api:
