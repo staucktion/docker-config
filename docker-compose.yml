@@ -22,7 +22,7 @@ services:
     env_file:
       - ../pg-admin/.env
     ports:
-      - 3330:80
+      - 9001:80
     restart: unless-stopped
   
   database-initializer:
@@ -62,4 +62,3 @@ services:
       - ../test-bank-api/.env
     volumes:
       - ../test-bank-api/mochawesome-report:/app/mochawesome-report
-    # restart: unless-stopped
