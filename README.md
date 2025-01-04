@@ -10,6 +10,8 @@ docker compose -p staucktion up -d --build
 docker compose -p staucktion down
 ```
 
+<br/>
+
 ## 🚀🚀🚀 Dev Commands 🚀🚀🚀
 
 ### PostgreSQL
