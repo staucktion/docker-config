@@ -39,7 +39,7 @@ services:
     env_file:
       - ../bank-api/.env
     ports:
-      - 8081:80
+      - 8001:80
     restart: unless-stopped
 
   bank-ui:
@@ -49,7 +49,7 @@ services:
     env_file:
       - ../bank-ui/.env
     ports:
-      - 8082:80
+      - 8002:80
     restart: unless-stopped
 
   ############################################################################# test
