@@ -2,8 +2,8 @@ services:
 
   postgresql:
     build: ../postgresql
-    image: staucktion-postgresql-image
-    container_name: staucktion-postgresql-container
+    image: st-postgresql-i
+    container_name: st-postgresql-c
     volumes:
       - ../postgresql/volume:/var/lib/postgresql/data
     ports:
@@ -14,11 +14,11 @@ services:
 
   pg-admin:
     build: ../pg-admin
-    image: staucktion-pg-admin-image
-    container_name: staucktion-pg-admin-container
+    image: st-pgadmin-i
+    container_name: st-pgadmin-c
     volumes:
       - ../pg-admin/volume:/var/lib/pgadmin
-      - ../postgresql/backup:/var/lib/pgadmin/storage
+      - ../database-initializer/backup:/var/lib/pgadmin/storage
     env_file:
       - ../pg-admin/.env
     ports:
@@ -27,15 +27,15 @@ services:
   
   database-initializer:
     build: ../database-initializer
-    image: staucktion-database-initializer-image
-    container_name: staucktion-database-initializer-container
+    image: st-database-initializer-i
+    container_name: st-database-initializer-c
     env_file:
       - ../database-initializer/.env
 
   bank-api:
     build: ../bank-api
-    image: staucktion-bank-api-image
-    container_name: staucktion-bank-api-container
+    image: st-bank-api-i
+    container_name: st-bank-api-c
     env_file:
       - ../bank-api/.env
     ports:
@@ -44,8 +44,8 @@ services:
 
   bank-ui:
     build: ../bank-ui
-    image: staucktion-bank-ui-image
-    container_name: staucktion-bank-ui-container
+    image: st-bank-ui-i
+    container_name: st-bank-ui-c
     env_file:
       - ../bank-ui/.env
     ports:
@@ -56,8 +56,8 @@ services:
 
   test-bank-api:
     build: ../test-bank-api
-    image: staucktion-test-bank-api-image
-    container_name: staucktion-test-bank-api-container
+    image: st-test-bank-api-i
+    container_name: st-test-bank-api-c
     env_file:
       - ../test-bank-api/.env
     volumes:
