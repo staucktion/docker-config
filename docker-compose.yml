@@ -52,6 +52,16 @@ services:
       - 8002:80
     restart: unless-stopped
 
+  web-api:
+    build: ../web-api
+    image: st-web-api-i
+    container_name: st-web-api-c
+    env_file:
+      - ../web-api/.env
+    ports:
+      - 8003:80
+    restart: unless-stopped
+
   ############################################################################# test
 
   test-bank-api:
