@@ -64,6 +64,16 @@ docker stop st-web-api-c
 docker rm st-web-api-c
 ```
 
+### Web UI
+
+```
+docker compose -p staucktion build web-ui
+docker compose -p staucktion up -d web-ui
+docker compose -p staucktion up --build -d web-ui
+docker stop st-web-ui-c
+docker rm st-web-ui-c
+```
+
 ### Bank UI
 
 ```
