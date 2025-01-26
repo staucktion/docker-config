@@ -57,7 +57,7 @@ services:
     image: st-web-api-i
     container_name: st-web-api-c
     env_file:
-      - ../web-api/.env
+      - ../web-api/.env.prod
     ports:
       - 8003:80
     restart: unless-stopped
