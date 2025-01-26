@@ -37,7 +37,7 @@ services:
     image: st-bank-api-i
     container_name: st-bank-api-c
     env_file:
-      - ../bank-api/.env
+      - ../bank-api/.env.prod
     ports:
       - 8001:80
     restart: unless-stopped
@@ -57,7 +57,7 @@ services:
     image: st-web-api-i
     container_name: st-web-api-c
     env_file:
-      - ../web-api/.env
+      - ../web-api/.env.prod
     ports:
       - 8003:80
     restart: unless-stopped
@@ -79,6 +79,6 @@ services:
     image: st-test-bank-api-i
     container_name: st-test-bank-api-c
     env_file:
-      - ../test-bank-api/.env
+      - ../test-bank-api/.env.prod
     volumes:
       - ../test-bank-api/mochawesome-report:/app/mochawesome-report

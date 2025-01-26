@@ -22,6 +22,7 @@ docker compose -p staucktion up -d postgresql
 docker compose -p staucktion up --build -d postgresql
 docker stop st-postgresql-c
 docker rm st-postgresql-c
+docker logs -f st-postgresql-c
 ```
 
 ### pgAdmin
@@ -32,6 +33,7 @@ docker compose -p staucktion up -d pg-admin
 docker compose -p staucktion up --build -d pg-admin
 docker stop st-pgadmin-c
 docker rm st-pgadmin-c
+docker logs -f st-pgadmin-c
 ```
 
 ### Database Initializer
@@ -42,6 +44,7 @@ docker compose -p staucktion up -d database-initializer
 docker compose -p staucktion up --build -d database-initializer
 docker stop st-database-initializer-c
 docker rm st-database-initializer-c
+docker logs -f st-database-initializer-c
 ```
 
 ### Bank API
@@ -52,6 +55,7 @@ docker compose -p staucktion up -d bank-api
 docker compose -p staucktion up --build -d bank-api
 docker stop st-bank-api-c
 docker rm st-bank-api-c
+docker logs -f st-bank-api-c
 ```
 
 ### Web API
@@ -62,6 +66,7 @@ docker compose -p staucktion up -d web-api
 docker compose -p staucktion up --build -d web-api
 docker stop st-web-api-c
 docker rm st-web-api-c
+docker logs -f st-web-api-c
 ```
 
 ### Web UI
@@ -72,6 +77,7 @@ docker compose -p staucktion up -d web-ui
 docker compose -p staucktion up --build -d web-ui
 docker stop st-web-ui-c
 docker rm st-web-ui-c
+docker logs -f st-web-ui-c
 ```
 
 ### Bank UI
@@ -82,6 +88,7 @@ docker compose -p staucktion up -d bank-ui
 docker compose -p staucktion up --build -d bank-ui
 docker stop st-bank-ui-c
 docker rm st-bank-ui-c
+docker logs -f st-bank-ui-c
 ```
 
 ### Test Bank API
@@ -92,6 +99,7 @@ docker compose -p staucktion up -d test-bank-api
 docker compose -p staucktion up --build -d test-bank-api
 docker stop st-test-bank-api-c
 docker rm st-test-bank-api-c
+docker logs -f st-test-bank-api-c
 ```
 
 ## Inspection
@@ -99,6 +107,4 @@ docker rm st-test-bank-api-c
 ```
 docker exec -it st-bank-api-c /bin/sh
 docker inspect st-bank-api-c
-docker logs st-bank-api-c
-cls
 ```
