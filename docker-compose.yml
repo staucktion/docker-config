@@ -37,7 +37,7 @@ services:
     image: st-bank-api-i
     container_name: st-bank-api-c
     env_file:
-      - ../bank-api/.env
+      - ../bank-api/.env.prod
     ports:
       - 8001:80
     restart: unless-stopped
