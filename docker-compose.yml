@@ -79,6 +79,6 @@ services:
     image: st-test-bank-api-i
     container_name: st-test-bank-api-c
     env_file:
-      - ../test-bank-api/.env
+      - ../test-bank-api/.env.prod
     volumes:
       - ../test-bank-api/mochawesome-report:/app/mochawesome-report
