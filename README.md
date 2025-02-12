@@ -17,6 +17,7 @@
 | Service              | Version                                                                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | docker-config        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/docker-config/tree/v1.0.0)        |
+| reverse-proxy        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/reverse-proxy/tree/v1.0.0)        |
 | postgresql           | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/postgresql/tree/v1.0.0)           |
 | bank-api             | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/bank-api/tree/v1.0.0)             |
 | bank-ui              | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/bank-ui/tree/v1.0.0)              |
