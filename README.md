@@ -1,6 +1,5 @@
 <h1 id="top" align="center">Docker Config</h1>
 
-
 <h2 id="service-versions">🧩 Service Versions</h2>
 
 | Service              | Version                                                                                                                                                                   |
@@ -14,8 +13,6 @@
 | database-initializer | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/database-initializer/tree/v1.0.0) |
 | pg-admin             | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/pg-admin/tree/v1.0.0)             |
 | test-bank-api        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/test-bank-api/tree/v1.0.0)        |
-
-<br/>
 
 <br/>
 
@@ -161,11 +158,11 @@ docker rm st-test-bank-api-c
 docker logs -f st-test-bank-api-c
 ```
 
-## Inspect & Monitor
+<br/>
+
+## 🔍 Inspect & Monitor
 
 ```
 docker exec -it st-bank-api-c /bin/sh
 docker inspect st-bank-api-c
 ```
-
-<br/>
