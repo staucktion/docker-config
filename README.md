@@ -42,9 +42,9 @@ docker compose -p staucktion build
 7. pgAdmin
 8. Test Bank API
 
+<br/>
 
 <h2 id="system-startup">🚀 System Startup</h2>
-
 
 ```
 docker compose -p staucktion build
