@@ -24,7 +24,7 @@ git clone https://github.com/staucktion/test-bank-api
 docker compose -p staucktion build
 ```
 
-- Run up command for modules which you want to launch.
+- Run `up` commands for the modules which you want to launch.
 
 - These is the up order for the modules
 
