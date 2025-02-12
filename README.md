@@ -28,7 +28,7 @@ docker compose -p staucktion build
 
 - Run `up` commands for the modules which you want to launch.
 
-- These is the up order for the modules
+- You can selectively start the necessary modules. Below is the recommended startup order:
 
 1. PostgreSQL
 2. Database Initializer
@@ -36,7 +36,7 @@ docker compose -p staucktion build
 4. Web API
 5. Web UI
 
-- These are the optionals
+- Optional Modules
 
 6. Bank UI
 7. pgAdmin
