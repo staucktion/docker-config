@@ -36,7 +36,7 @@
 - **Linux, Mac:** /etc/hosts
 
 ```
-127.0.0.1 development.net
+127.0.0.1 st.local.net
 ```
 
 - Create new directory and move inside.
