@@ -22,6 +22,7 @@
 - Clone repositories.
 
 ```
+git clone https://github.com/staucktion/docker-config
 git clone https://github.com/staucktion/postgresql
 git clone https://github.com/staucktion/bank-api
 git clone https://github.com/staucktion/bank-ui
