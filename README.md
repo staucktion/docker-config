@@ -18,6 +18,8 @@ git clone https://github.com/staucktion/pg-admin
 git clone https://github.com/staucktion/test-bank-api
 ```
 
+- Configure env variables in repositories as stated in each repository.
+
 - Build all images
 
 ```
@@ -43,7 +45,6 @@ docker compose -p staucktion build
 
 <h2 id="system-startup">🚀 System Startup</h2>
 
-- Configure env variables in repositories as stated in each repository.
 
 ```
 docker compose -p staucktion build
