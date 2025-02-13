@@ -1,5 +1,19 @@
 services:
 
+  reverse-proxy:
+    image: traefik
+    container_name: st-reverse-proxy-c
+    command: --providers.docker
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../reverse-proxy/traefik-static.yml:/traefik.yml
+      - ../reverse-proxy/traefik-dynamic.yml:/etc/traefik/dynamic/traefik-dynamic.yml
+      - ../reverse-proxy/cert/selfsigned.crt:/etc/traefik/certs/selfsigned.crt
+      - ../reverse-proxy/cert/selfsigned.key:/etc/traefik/certs/selfsigned.key
+
   postgresql:
     build: ../postgresql
     image: st-postgresql-i
@@ -38,8 +52,8 @@ services:
     container_name: st-bank-api-c
     env_file:
       - ../bank-api/.env.prod
-    ports:
-      - 8001:80
+    # ports:
+    #   - 8001:80
     restart: unless-stopped
 
   bank-ui:
@@ -48,8 +62,8 @@ services:
     container_name: st-bank-ui-c
     env_file:
       - ../bank-ui/.env
-    ports:
-      - 8002:80
+    # ports:
+    #   - 8002:80
     restart: unless-stopped
 
   web-api:
@@ -58,8 +72,8 @@ services:
     container_name: st-web-api-c
     env_file:
       - ../web-api/.env.prod
-    ports:
-      - 8003:80
+    # ports:
+    #   - 8003:80
     restart: unless-stopped
 
   web-ui:
@@ -68,8 +82,8 @@ services:
     container_name: st-web-ui-c
     env_file:
       - ../web-ui/.env
-    ports:
-      - 8004:80
+    # ports:
+    #   - 8004:80
     restart: unless-stopped
 
   ############################################################################# test
