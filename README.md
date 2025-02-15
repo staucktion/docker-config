@@ -5,9 +5,9 @@
 | Service  | URL                                           |
 |----------|-----------------------------------------------|
 | web-ui   | [st.local.net](https://st.local.net)          |
-| bank-ui  | [st.local.net](https://st.local.net/bank-ui)  |
-| web-api  | [st.local.net](https://st.local.net/web-api)  |
-| bank-api | [st.local.net](https://st.local.net/bank-api) |
+| bank-ui  | [st.local.net/bank-ui](https://st.local.net/bank-ui)  |
+| web-api  | [st.local.net/web-api](https://st.local.net/web-api)  |
+| bank-api | [st.local.net/bank-api](https://st.local.net/bank-api) |
 | pg-admin | [localhost:900](http://localhost:9001)        |
 
 <br/>
