@@ -2,13 +2,13 @@
 
 <h2 id="system-links">🔗 System Links</h2> 
 
-| Service  | URL                                           |
-|----------|-----------------------------------------------|
-| web-ui   | [st.local.net](https://st.local.net)          |
-| bank-ui  | [st.local.net/bank-ui](https://st.local.net/bank-ui)  |
-| web-api  | [st.local.net/web-api](https://st.local.net/web-api)  |
+| Service  | URL                                                    |
+|----------|--------------------------------------------------------|
+| web-ui   | [st.local.net](https://st.local.net)                   |
+| bank-ui  | [st.local.net/bank-ui](https://st.local.net/bank-ui)   |
+| web-api  | [st.local.net/web-api](https://st.local.net/web-api)   |
 | bank-api | [st.local.net/bank-api](https://st.local.net/bank-api) |
-| pg-admin | [localhost:900](http://localhost:9001)        |
+| pg-admin | [localhost:900](http://localhost:9001)                 |
 
 <br/>
 
@@ -16,13 +16,13 @@
 
 | Service              | Version                                                                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| docker-config        | [![.](https://img.shields.io/badge/1.0.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/docker-config/tree/v1.0.1)        |
-| reverse-proxy        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/reverse-proxy/tree/v1.0.0)        |
+| docker-config        | [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/docker-config/tree/v1.1.0)        |
+| reverse-proxy        | [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/reverse-proxy/tree/v1.1.0)        |
 | postgresql           | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/postgresql/tree/v1.0.0)           |
 | bank-api             | [![.](https://img.shields.io/badge/1.0.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/bank-api/tree/v1.0.1)             |
 | bank-ui              | [![.](https://img.shields.io/badge/1.0.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/bank-ui/tree/v1.0.1)              |
-| web-api              | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/web-api/tree/v1.0.0)              |
-| web-ui               | [![.](https://img.shields.io/badge/1.0.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/web-ui/tree/v1.0.1)               |
+| web-api              | [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/web-api/tree/v1.1.0)              |
+| web-ui               | [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/web-ui/tree/v1.1.0)               |
 | database-initializer | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/database-initializer/tree/v1.0.0) |
 | pg-admin             | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/pg-admin/tree/v1.0.0)             |
 | test-bank-api        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/test-bank-api/tree/v1.0.0)        |
