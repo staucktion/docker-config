@@ -11,8 +11,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ../reverse-proxy/traefik-static.yml:/traefik.yml
       - ../reverse-proxy/traefik-dynamic.yml:/etc/traefik/dynamic/traefik-dynamic.yml
-      - ../reverse-proxy/cert/selfsigned.crt:/etc/traefik/certs/selfsigned.crt
-      - ../reverse-proxy/cert/selfsigned.key:/etc/traefik/certs/selfsigned.key
+      - ../reverse-proxy/cert/acme.json:/etc/traefik/acme.json
 
   postgresql:
     build: ../postgresql
