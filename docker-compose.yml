@@ -35,9 +35,12 @@ services:
       - ../database-initializer/backup:/var/lib/pgadmin/storage
     env_file:
       - ../pg-admin/.env
-    ports:
-      - 9001:80
+    #ports:
+    #  - 9001:80
     restart: unless-stopped
+    privileged: true
+    user: root
+
   
   database-initializer:
     build: ../database-initializer
