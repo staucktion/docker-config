@@ -55,6 +55,7 @@ git clone https://github.com/staucktion/web-api
 git clone https://github.com/staucktion/web-ui
 git clone https://github.com/staucktion/database-initializer
 git clone https://github.com/staucktion/pg-admin
+git clone https://github.com/staucktion/portainer
 git clone https://github.com/staucktion/test-bank-api
 ```
 
