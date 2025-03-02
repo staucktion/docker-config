@@ -172,7 +172,7 @@ docker rm                                   st-database-initializer-c
 docker logs -f                              st-database-initializer-c
 ```
 
-### pgAdmin
+### PgAdmin
 
 ```
 docker compose -p staucktion build         pg-admin
@@ -181,6 +181,17 @@ docker compose -p staucktion up --build -d pg-admin
 docker stop                                st-pgadmin-c
 docker rm                                  st-pgadmin-c
 docker logs -f                             st-pgadmin-c
+```
+
+### Portainer
+
+```
+docker compose -p staucktion build         portainer
+docker compose -p staucktion up -d         portainer
+docker compose -p staucktion up --build -d portainer
+docker stop                                st-portainer-c
+docker rm                                  st-portainer-c
+docker logs -f                             st-portainer-c
 ```
 
 ### Test Bank API
