@@ -2,14 +2,14 @@
 
 <h2 id="system-links">🔗 System Links</h2> 
 
-| Service   | URL                                                    |
-|-----------|--------------------------------------------------------|
-| web-ui    | [st.local.net](https://st.local.net)                   |
-| bank-ui   | [st.local.net/bank-ui](https://st.local.net/bank-ui)   |
-| web-api   | [st.local.net/web-api](https://st.local.net/web-api)   |
-| bank-api  | [st.local.net/bank-api](https://st.local.net/bank-api) |
-| pg-admin  | [localhost:900](http://st.local.net/pgadmin)           |
-| portainer | [localhost:900](http://st.local.net/portainer)         |
+| Service   | URL                                                     |
+|-----------|---------------------------------------------------------|
+| web-ui    | [st.local.net](https://st.local.net)                    |
+| bank-ui   | [st.local.net/bank-ui](https://st.local.net/bank-ui)    |
+| web-api   | [st.local.net/web-api](https://st.local.net/web-api)    |
+| bank-api  | [st.local.net/bank-api](https://st.local.net/bank-api)  |
+| pg-admin  | [st.local.net/pgadmin](http://st.local.net/pgadmin)     |
+| portainer | [st.local.net/portainer](http://st.local.net/portainer) |
 
 <br/>
 
