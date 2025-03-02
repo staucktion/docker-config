@@ -88,6 +88,17 @@ services:
     #   - 8004:80
     restart: unless-stopped
 
+  portainer:
+    build: ../portainer
+    image: st-portainer-i
+    container_name: st-portainer-c
+    # ports:
+    #   - "9002:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../portainer/mount:/data
+    restart: unless-stopped
+
   ############################################################################# test
 
   test-bank-api:

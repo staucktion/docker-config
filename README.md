@@ -2,13 +2,14 @@
 
 <h2 id="system-links">🔗 System Links</h2> 
 
-| Service  | URL                                                    |
-|----------|--------------------------------------------------------|
-| web-ui   | [st.local.net](https://st.local.net)                   |
-| bank-ui  | [st.local.net/bank-ui](https://st.local.net/bank-ui)   |
-| web-api  | [st.local.net/web-api](https://st.local.net/web-api)   |
-| bank-api | [st.local.net/bank-api](https://st.local.net/bank-api) |
-| pg-admin | [localhost:900](http://localhost:9001)                 |
+| Service   | URL                                                     |
+|-----------|---------------------------------------------------------|
+| web-ui    | [st.local.net](https://st.local.net)                    |
+| bank-ui   | [st.local.net/bank-ui](https://st.local.net/bank-ui)    |
+| web-api   | [st.local.net/web-api](https://st.local.net/web-api)    |
+| bank-api  | [st.local.net/bank-api](https://st.local.net/bank-api)  |
+| pg-admin  | [st.local.net/pgadmin](http://st.local.net/pgadmin)     |
+| portainer | [st.local.net/portainer](http://st.local.net/portainer) |
 
 <br/>
 
@@ -25,6 +26,7 @@
 | web-ui               | [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/web-ui/tree/v1.2.0)               |
 | database-initializer | [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/database-initializer/tree/v1.2.0) |
 | pg-admin             | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/pg-admin/tree/v1.0.0)             |
+| portainer            | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/portainer/tree/v1.0.0)            |
 | test-bank-api        | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/staucktion/test-bank-api/tree/v1.0.0)        |
 
 <br/>
@@ -53,6 +55,7 @@ git clone https://github.com/staucktion/web-api
 git clone https://github.com/staucktion/web-ui
 git clone https://github.com/staucktion/database-initializer
 git clone https://github.com/staucktion/pg-admin
+git clone https://github.com/staucktion/portainer
 git clone https://github.com/staucktion/test-bank-api
 ```
 
@@ -78,7 +81,8 @@ docker compose -p staucktion build
 - Optional Modules
 
 7. Bank UI
-8. pgAdmin
+8. PgAdmin
+9. Portainer
 9. Test Bank API
 
 <br/>
@@ -172,7 +176,7 @@ docker rm                                   st-database-initializer-c
 docker logs -f                              st-database-initializer-c
 ```
 
-### pgAdmin
+### PgAdmin
 
 ```
 docker compose -p staucktion build         pg-admin
@@ -181,6 +185,17 @@ docker compose -p staucktion up --build -d pg-admin
 docker stop                                st-pgadmin-c
 docker rm                                  st-pgadmin-c
 docker logs -f                             st-pgadmin-c
+```
+
+### Portainer
+
+```
+docker compose -p staucktion build         portainer
+docker compose -p staucktion up -d         portainer
+docker compose -p staucktion up --build -d portainer
+docker stop                                st-portainer-c
+docker rm                                  st-portainer-c
+docker logs -f                             st-portainer-c
 ```
 
 ### Test Bank API
