@@ -13,6 +13,7 @@ services:
       - ../reverse-proxy/traefik-dynamic.yml:/etc/traefik/dynamic/traefik-dynamic.yml
       - ../reverse-proxy/cert/selfsigned.crt:/etc/traefik/certs/selfsigned.crt
       - ../reverse-proxy/cert/selfsigned.key:/etc/traefik/certs/selfsigned.key
+    restart: always
 
   postgresql:
     build: ../postgresql
