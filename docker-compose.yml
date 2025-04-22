@@ -76,6 +76,7 @@ services:
     container_name: st-web-api-c
     volumes:
       - ../web-api/database:/app/database
+      - ../web-api/storage:/app/storage
     env_file:
       - ../web-api/.env.prod
     # ports:
